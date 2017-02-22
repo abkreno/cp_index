@@ -82,7 +82,6 @@
 2. UVa 01201 - Taxi Cab Scheme * (LA 3126, NWEurope04, MPC on DAG)
 
 1. UVa 00120 - Stacks Of Flapjacks * (pancake sorting, greedy version)
-2. The Pancake Sorting problem as described in this section.
 
 1. UVa 11476 - Factoring Large(t) ... * (see the discussion above)
 2. POJ 1811 - Prime Test, see http://poj.org/problem?id=1811

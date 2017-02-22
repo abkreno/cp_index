@@ -69,4 +69,4 @@
 9. UVa 11419 - SAM I AM (MVC, K ̈onig theorem)
 10. UVa 12083 - Guardian of Decency (LA 3415, NorthwesternEurope05, MIS)
 11. UVa 12168 - Cat vs. Dog (LA 4288, NorthwesternEurope08, MIS)
-12. Top Coder Open 2009: Prime Pairs (discussed in this section)
+12. Top Coder Open 2009 - Prime Pairs (discussed in this section)

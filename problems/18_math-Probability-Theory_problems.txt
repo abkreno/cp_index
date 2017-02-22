@@ -7,10 +7,7 @@
 7. UVa 10759 - Dice Throwing * (discussed in this section)
 8. UVa 10777 - God, Save me (expected value)
 9. UVa 11021 - Tribbles (probability)
-10. UVa 11176 - Winning Streak * (DP, s: (n left, max streak) where n left is
-the number of remaining games and max streak stores the longest consecutive
-wins; t: lose this game, or win the next W = [1..n left] games and lose the
-(W+1)-th game; special case if W = n left)
+10. UVa 11176 - Winning Streak * (DP, s: (n left, max streak) where n left is the number of remaining games and max streak stores the longest consecutive wins; t: lose this game, or win the next W = [1..n left] games and lose the (W+1)-th game; special case if W = n left)
 11. UVa 11181 - Probability (bar) Given (iterative brute force, try all possibilities)
 12. UVa 11346 - Probability (a bit of geometry)
 13. UVa 11500 - Vampires (Gambler’s Ruin Problem)

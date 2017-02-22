@@ -9,8 +9,8 @@ This is a java written program that generates a csv file containing all the prob
   - `Problem Name` : The Judge name of the problem where Judge can be (Uva, IOI...)
   - `Problem Link` : Link to the problem description
   - `Problem Hint` : The hint given in the book about the problem
-  - `Status` : *TODO* This column will be used to indicate whether the problem is solved/unsolved
-  - `Problem Solution Link` : *TODO* This column will be used to indicate whether the problem is solved/unsolved 
+  - `Status` : *[TODO]* This column will be used to indicate whether the problem is solved/unsolved
+  - `Problem Solution Link` : *[TODO]* This column will be used to indicate whether the problem is solved/unsolved 
 
 #### How to use
 
