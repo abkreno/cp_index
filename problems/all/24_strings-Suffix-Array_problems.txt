@@ -1,8 +1,0 @@
-1. UVa 00719 - Glass Beads (min lexicographic rotation 19 ; O(n log n) build SA)
-2. UVa 00760 - DNA Sequencing * (Longest Common Substring of two strings)
-3. UVa 01223 - Editor (LA 3901, Seoul07, Longest Repeated Substring (or KMP))
-4. UVa 01254 - Top 10 (LA 4657, Jakarta09, Suffix Array + Segment Tree)
-5. UVa 11107 - Life Forms * (Longest Common Substring of > 1/2 of the strings)
-6. UVa 11512 - GATTACA * (Longest Repeated Substring)
-7. SPOJ 6409 - Suffix Array (problem author: Felix Halim)
-8. IOI 2008 - Type Printer (DFS traversal of Suffix Trie)
