@@ -9,14 +9,14 @@ public class Chapter implements Comparable<Chapter> {
 	private int chapterNumber;
 	private LinkedList<Problem> chapterProblems;
 
-	public Chapter(String fileName) {
+	public Chapter(String folderName,String fileName) {
 		this.fileName = fileName;
 		String[] splitted = fileName.split("_");
 		this.chapterName = getChapterName(splitted[1]);
 		this.chapterNumber = Integer.parseInt(splitted[0]);
 		this.chapterProblems = new LinkedList<>();
 		try {
-			generateChapterProblems("problems/" + fileName);
+			generateChapterProblems(folderName+"/" + fileName);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -34,7 +34,7 @@ public class Chapter implements Comparable<Chapter> {
 				indexInSubChapter = 1;
 				continue;
 			}
-			this.chapterProblems.push(new Problem(l, indexInChapter, indexInSubChapter,fileName));
+			this.chapterProblems.push(new Problem(l, indexInChapter, indexInSubChapter));
 			indexInChapter++;
 			indexInSubChapter++;
 		}

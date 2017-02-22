@@ -5,12 +5,12 @@ import java.util.LinkedList;
 public class Main {
 
 	public static void main(String[] args) {
-		File folder = new File("problems/");
+		File folder = new File("test_problem/");
 		File[] listOfFiles = folder.listFiles();
 		LinkedList<Chapter> chapterFiles = new LinkedList<>();
 		for (int i = 0; i < listOfFiles.length; i++) {
 			if (listOfFiles[i].isFile()) {
-				chapterFiles.add(new Chapter(listOfFiles[i].getName()));
+				chapterFiles.add(new Chapter("test_problem", listOfFiles[i].getName()));
 			}
 		}
 		Collections.sort(chapterFiles);
