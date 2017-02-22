@@ -1,10 +1,11 @@
 import java.io.File;
+import java.net.UnknownHostException;
 import java.util.Collections;
 import java.util.LinkedList;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws UnknownHostException {
 		File folder = new File("test_problem/");
 		File[] listOfFiles = folder.listFiles();
 		LinkedList<Chapter> chapterFiles = new LinkedList<>();
@@ -18,7 +19,11 @@ public class Main {
 		for (Chapter chapter : chapterFiles) {
 			totalProblems += chapter.getProblemsCount();
 		}
+		DBHandler dbHandler = new DBHandler();
+		dbHandler.insertDataToDB(chapterFiles);
+
 		System.out.println(chapterFiles);
 		System.out.println(totalProblems);
 	}
+
 }

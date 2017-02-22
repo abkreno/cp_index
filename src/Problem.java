@@ -35,7 +35,7 @@ public class Problem {
 
 	private void readProblemData(String searchQuery) throws UnsupportedEncodingException, IOException {
 		String google = "http://www.google.com/search?q=";
-		String search = "stackoverflow";
+		String search = searchQuery;
 		String charset = "UTF-8";
 		String userAgent = "ExampleBot 1.0 (+http://example.com/bot)"; 
 		Elements links = Jsoup.connect(google + URLEncoder.encode(search, charset)).userAgent(userAgent).get()
