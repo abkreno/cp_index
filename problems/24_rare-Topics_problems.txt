@@ -1,0 +1,105 @@
+1. UVa 10319 - Manhattan * (the hard part in solving problems involving 2-SAT is in identifying that it is indeed a 2-SAT problem and then building the implication graph; for this problem, we set each street and each avenue as a variable where true means that it can only be used in a certain direction and false means that it can only be used in the other direction; a simple path will be in one of this form: (street a ∧ avenue b) ∨ (avenue c ∧ street d); this can be transformed into 2-CNF formula of (a ∨ c) ∧ (a ∨ d) ∧ (b ∨ c) ∧ (b ∨ d); build the implication graph and check if it is satisfiable using the SCC check as shown above; note that there exists a special case where the clause only has one literal, i.e. the simple path uses one street only or one avenue only.)
+
+1. UVa 00588 - Video Surveillance * (see variant 3 solution above)
+2. UVa 10078 - Art Gallery * (see variant 2 solution above)
+3. UVa 10243 - Fire; Fire; Fire * (variant 4: this problem can be reduced to the Minimum Vertex Cover problem on Tree; there is a polynomial DP solution for this variant; the solution has actually been discussed Section 4.7.1)
+4. LA 2512 - Art Gallery (see variant 3 solution above plus area of polygon)
+5. LA 3617 - How I Mathematician ... (variant 3)
+
+1. UVa 01096 - The Islands * (LA 4791, World Finals Harbin10, Bitonic TSP variant; print the actual path)
+2. UVa 01347 - Tour * (LA 3305, Southeastern Europe 2005; this is the pure version of Bitonic TSP problem, you may want to start from here)
+
+1. UVa 00551 - Nesting a Bunch of ... * (bracket matching, stack, classic)
+2. UVa 00673 - Parentheses Balance * (similar to UVa 551, classic)
+3. UVa 11111 - Generalized Matrioshkas * (bracket matching with some twists)
+
+1. UVa 10296 - Jogging Trails * (see the discussion above)
+
+1. UVa 10245 - The Closest Pair Problem * (classic, as discussed above)
+2. UVa 11378 - Bey Battle * (also a closest pair problem)
+
+1. UVa 10088 - Trees on My Island (Pick’s Theorem)
+2. UVa 10178 - Count the Faces (Euler’s Formula, a bit of union find)
+3. UVa 10213 - How Many Pieces ... * (Moser’s circle; the formula is hard to derive; g(n) = n C 4 + n C 2 + 1)
+4. UVa 10720 - Graph Construction * (Erd ̋os-Gallai’s Theorem)
+5. UVa 10843 - Anne’s game (Cayley’s Formula to count the number of spanning trees of a graph with n vertices is n n−2 ; use Java BigInteger)
+6. UVa 11414 - Dreams (similar to UVa 10720; Erd ̋os-Gallai’s Theorem)
+7. UVa 11719 - Gridlands Airports * (count the number of spanning tree in a complete bipartite graph; use Java BigInteger)
+
+1. UVa 11319 - Stupid Sequence? * (solve the system of the first 7 linear equations; then use all 1500 equations for ‘smart sequence’ checks)
+
+1. UVa 11439 - Maximizing the ICPC * (binary search the answer to get the minimum weight; use this weight to reconstruct the graph; use Edmonds’s Matching algorithm to test if we can get perfect matching on general graph)
+
+1. UVa 00535 - Globetrotter (gcDistance)
+2. UVa 10316 - Airline Hub (gcDistance)
+3. UVa 10897 - Travelling Distance (gcDistance)
+4. UVa 11817 - Tunnelling The Earth (gcDistance; 3D Euclidean distance)
+
+1. UVa 00563 - Crimewave * (check whether the maximum number of indepen- dent paths on the flow graph—with unit edge and unit vertex capacity—equals to b banks; analyze the upperbound of the answer to realize that the standard max flow solution suffices even for the largest test case)
+2. UVa 01242 - Necklace * (LA 4271, Hefei08, to have a necklace, we need to be able to two edge-disjoint s-t flows)
+
+1. UVa 00299 - Train Swapping (solvable with O(n 2 ) bubble sort)
+2. UVa 00612 - DNA Sorting * (needs O(n 2 ) stable sort)
+3. UVa 10327 - Flip Sort * (solvable with O(n 2 ) bubble sort)
+4. UVa 10810 - Ultra Quicksort (requires O(n log n) merge sort)
+5. UVa 11495 - Bubbles and Buckets (requires O(n log n) merge sort)
+6. UVa 11858 - Frosh Week * (requires O(n log n) merge sort; 64-bit integer)
+
+1. UVa 00130 - Roman Roulette (the original Josephus problem)
+2. UVa 00133 - The Dole Queue (brute force, similar to UVa 130)
+3. UVa 00151 - Power Crisis (the original Josephus problem)
+4. UVa 00305 - Joseph (the answer can be precalculated)
+5. UVa 00402 - M*A*S*H (modified Josephus, simulation)
+6. UVa 00440 - Eeny Meeny Moo (brute force, similar to UVa 151)
+7. UVa 10015 - Joseph’s Cousin (modified Josephus, dynamic k, variant of UVa 305)
+8. UVa 10771 - Barbarian tribes * (brute force, input size is small)
+9. UVa 10774 - Repeated Josephus * (repeated case of Josephus when k = 2)
+10. UVa 11351 - Last Man Standing * (use general case Josephus recurrence)
+
+1. UVa 00439 - Knight Moves * (one BFS per query is enough)
+2. UVa 11643 - Knight Tour * (the distance between any 2 interesting positions can be obtained by using a pre-calculated BFS table (plus handling of the special corner cases); afterwards, this is just classic TSP problem, see Section 3.5.2)
+
+1. UVa 10938 - Flea circus (Lowest Common Ancestor as outlined above)
+2. UVa 12238 - Ants Colony (very similar to UVa 10938)
+
+1. UVa 01266 - Magic Square * (follow the given construction strategy)
+
+1. UVa 00348 - Optimal Array Mult ... * (as above, output the optimal solu- tion too; note that the optimal matrix multiplication sequence is not unique; e.g. imagine if all matrices are square matrices)
+
+1. UVa 10229 - Modular Fibonacci (discussed in this section + modulo)
+2. UVa 10518 - How Many Calls? * (derive the pattern of the answers for small n; the answer is 2 × f ib(n) − 1; then use UVa 10229 solution)
+3. UVa 10655 - Contemplation, Algebra * (discussed in this section)
+4. UVa 10870 - Recurrences (form the required matrix first; power of matrix)
+5. UVa 11486 - Finding Paths in Grid * (model as adjacency matrix; raise the adjacency matrix to the power of N in O(log N ) to get the number of paths) 6. UVa 12470 - Tribonacci (very similar to UVa 10229; the 3 × 3 matrix is = [0 1 0; 0 0 1; 1 1 1]; the answer is at matrix[1][1] after it is raised to the power of n and with modulo 1000000009)
+
+1. UVa 10594 - Data Flow (basic min cost max flow problem)
+2. UVa 10746 - Crime Wave - The Sequel * (min weighted bip matching)
+3. UVa 10806 - Dijkstra, Dijkstra (send 2 edge-disjoint flows with min cost)
+4. UVa 10888 - Warehouse * (BFS/SSSP; min weighted bipartite matching)
+5. UVa 11301 - Great Wall of China * (modeling, vertex capacity, MCMF)
+
+1. UVa 01184 - Air Raid * (LA 2696, Dhaka02, MPC on DAG ≈ MCBM)
+2. UVa 01201 - Taxi Cab Scheme * (LA 3126, NWEurope04, MPC on DAG)
+
+1. UVa 00120 - Stacks Of Flapjacks * (pancake sorting, greedy version)
+2. The Pancake Sorting problem as described in this section.
+
+1. UVa 11476 - Factoring Large(t) ... * (see the discussion above)
+2. POJ 1811 - Prime Test, see http://poj.org/problem?id=1811
+
+1. UVa 00727 - Equation * (the classic Infix to Postfix conversion problem)
+
+1. UVa 00344 - Roman Digititis * (count how many Roman characters are used to make all numbers from 1 to N)
+2. UVa 00759 - The Return of the ... (Roman number + validity check)
+3. UVa 11616 - Roman Numerals * (Roman numeral conversion problem)
+4. UVa 12397 - Roman Numerals * (conversion, each Roman digit has value)
+
+1. UVa 01121 - Subsequence * (sliding window variant no 1)
+2. UVa 11536 - Smallest Sub-Array * (sliding window variant no 2)
+3. IOI 2011 - Hottest (practice task; sliding window variant no 3)
+4. IOI 2011 - Ricehub (sliding window++)
+5. IOI 2012 - Tourist Plan (practice task; another sliding window variant; the best answer starting from city 0 and ending at city i ∈ [0..N -1] is the sum of happiness of the top K-i cities ∈ [0..i]; use priority queue; output the highest sum)
+
+1. UVa 11462 - Age Sort * (standard Counting Sort problem)
+
+1. UVa 10017 - The Never Ending ... * (classical problem)
